@@ -8,7 +8,7 @@ import ct from "../images/CryptoTracker.JPG"
 import weatherApp from "../images/WeatherApp.JPG"
 import slp from "../images/Signup Login Page.JPG"
 import ap from "../images/Anshpay.JPG"
-import am from "../images/Ansh Map.JPG"
+import am from "../images/AnshMap.JPG"
 
 const projectData=[
     {

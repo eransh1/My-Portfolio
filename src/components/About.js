@@ -15,7 +15,7 @@ const About = () => {
         </div>
         <div className="col-sm-12 col-md-6 col-lg-6 about-col-right">
             <div className='my-image'>
-                <img className='my-image' src={Myimage} alt="my-image" />
+                <img className='my-image' src={Myimage} alt="my-photo" />
                 <div className='linkss'>
                 <hr className='line' />
                 <a className='linkss-link' href="https://github.com/eransh1"><i className="fa-brands fa-github"></i></a>
