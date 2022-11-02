@@ -2,6 +2,12 @@ body{
     font-family: "inter";
     background-color:#3f4344 ;
 }
+#navbar-conttt{
+    z-index: 100;
+}
+#navbarSupportedContent{
+    z-index: 1;
+}
 .navbar-cont{
     padding-top: 1rem;
 }
@@ -85,5 +91,16 @@ font-size: 1rem;
     }
     .download-cv,.navbar-brand{
         margin-left: 1rem;
+    }
+}
+@media(max-width:499px){
+    .navbar-brand{
+font-size: 1rem;
+    }
+    .grey-left,.grey-right{
+        font-size: 2rem;
+    }
+    .navbar-toggler{
+margin-right: 1rem;
     }
 }

@@ -21,7 +21,7 @@ const[isScroll,setIsScroll]=useState(false)
 
   return (
     <>
-        <nav className="navbar navbar-expand-lg navbar-cont">
+        <nav className="navbar navbar-expand-lg navbar-cont" id='navbar-conttt'>
   <div className="container-fluid">
     <h2 id="brand-home" className="navbar-brand"><span class="grey-left"> &lt;</span>Ansh Bansal<span class="grey-right">/&gt;</span></h2>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

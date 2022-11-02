@@ -16,6 +16,9 @@
     justify-content: center;
     margin-left: 0;
     margin-right: 0;
+    
+    
+    
 }
 .skill-col{
     display: flex;
@@ -37,4 +40,9 @@
 .skill-img{
     width: 70px;
     margin-bottom: 4rem;
+}
+@media(max-width:506px){
+    .skill-col{
+        margin-right: 0;
+    }
 }

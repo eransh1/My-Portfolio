@@ -1,6 +1,7 @@
 import React from 'react'
 import "../css/About.css"
-import Myimage from "../images/Myimage.png"
+import Myimage from "../images/Myimage2.png"
+
 
 
 const About = () => {
@@ -8,14 +9,14 @@ const About = () => {
     <>
    <section id='about'>
     <div className='row about-row'>
-        <div className="col-sm-12 col-md-6 col-lg-6 about-col-left">
+        <div className="col-sm-12 col-md-12 col-lg-6 about-col-left">
             <h1 className='about-h1'>I'M <span className='about-span'>Ansh Bansal</span></h1>
             <p className='about-p'>Frontend Developer</p>
             <a href="#contact"><button className='download-cv'>Contact Me</button></a>
         </div>
-        <div className="col-sm-12 col-md-6 col-lg-6 about-col-right">
+        <div className="col-sm-12 col-md-12 col-lg-6 about-col-right">
             <div className='my-image'>
-                <img className='my-image' src={Myimage} alt="my-photo" />
+                <img className='my-imagee' src={Myimage} alt="my-photo" />
                 <div className='linkss'>
                 <hr className='line' />
                 <a className='linkss-link' href="https://github.com/eransh1"><i className="fa-brands fa-github"></i></a>

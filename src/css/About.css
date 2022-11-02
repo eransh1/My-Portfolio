@@ -10,6 +10,7 @@
 .about-col-left{
 padding-top: 5rem;
 padding-bottom: 3rem;
+z-index: 1;
 }
 .about-h1{
     color: white;
@@ -25,13 +26,15 @@ padding-bottom: 3rem;
 }
 
 .my-image{
-    width: 500px;
+    width: fit-content;
     height: 450px;
     position: relative;
 }
-.my-image{
-    width: 90%;
-    height: 100%;
+.my-imagee{
+    width: 450px;
+    height: 120%;
+    position: relative;
+    top: -20%;
 }
 .linkss{
     display: flex;
@@ -39,12 +42,12 @@ padding-bottom: 3rem;
     align-items: center;
     position: absolute;
     bottom: 5%;
-    right: 2%;
+    right: 0;
     z-index: 2;
 }
 .line{
     color: #FEC260;
-    width: 7rem;
+    width: 6rem;
     height: .2rem;
     background-color: #FEC260;
     border: 1px solid #FEC260;
@@ -52,8 +55,9 @@ padding-bottom: 3rem;
     margin-bottom: 4rem;
 }
 .linkss-link,.linkss-link:hover{
-    color: white;
+    color: black;
     margin: .5rem;
+    font-size: 1.2rem;
 }
 .about-intro-about{
     color: white;
@@ -79,31 +83,45 @@ padding-bottom: 3rem;
     letter-spacing: .1rem;
 }
 
-
-@media(max-width:767px){
+@media(max-width:991px){
+    .about-row{
+        padding-left: 1rem;
+    }
     .my-image{
-        width: 400px;
+        width: fit-content;
         height: 350px;
     } 
+    .my-imagee{
+        width: 370px;
+        height: 400px; 
+    }
     .about-col-left,.about-col-right{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    place-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        place-content: center;
+        }
+        .about-row{
+            padding-left: 0rem; 
+        }
+        .linkss{
+          display: none;
+        }
+        .intro-col-left{
+            margin: auto;
+            margin-top: 2rem;
+            height: 50px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .intro-col-right{
+            margin: auto;
+            width: 90%;
+        }
+}
+@media(max-width:517px){
+    .my-imagee {
+        width: 400px;
     }
-    .about-row{
-        padding-left: 0rem; 
-    }
-    .linkss{
-      display: none;
-    }
-    .intro-col-left{
-        margin: auto;
-        margin-top: 2rem;
-        height: 50px;
-    }
-    .intro-col-right{
-        margin: auto;
-        width: 90%;
-    }
+    
 }
