@@ -8,6 +8,7 @@ import ct from "../images/CryptoTracker.JPG"
 import weatherApp from "../images/WeatherApp.JPG"
 import slp from "../images/Signup Login Page.JPG"
 import ap from "../images/Anshpay.JPG"
+import am from "../images/Ansh Map.JPG"
 
 const projectData=[
     {
@@ -66,6 +67,15 @@ const projectData=[
     },
     {
         id:7,
+        img:am,
+        title:"ANSH MAP",
+        link:"https://anshmap-5epsqbzej-eransh1.vercel.app/",
+        skills:["HTML","CSS","REACT.JS","JAVASCRIPT","API","GIT"],
+        info:["This project is for practice of Goggle Map Api","The origin and destination takes a valid city name. The mode of travel must be selected.","The map gives the route between the origin and destination and the time taken to travel with respect to mode of travel.","On clearing the map, the map is refreshed.","On clicking my location button, map will be repositioned to its original position."],
+    },
+
+    {
+        id:8,
         img:slp,
         title:"SIGNUP LOGIN PAGE",
         link:"https://ansh-signup-login-page-lj57qjts6-eransh1.vercel.app/",
@@ -73,7 +83,7 @@ const projectData=[
         info:["This website contain Signup page, Login page and a user page.","The signup page is linked with firbase authentication and validation is done using Formik and Yup library.","On registering user will be taken to user page.","On logging out user will be taken to sign in page which will take actual email and password that user crated in registration page to login back to user page.","User will stay login(even on refreshing the page) unless logged out."],
     },
     {
-        id:8,
+        id:9,
         img:at,
         title:"ANSH TOURISM",
         link:"https://ansh-tourismm-wsxmi4p5g-eransh1.vercel.app/",
@@ -81,7 +91,7 @@ const projectData=[
         info:["This is a Practice Tourism Website","The Front-end part of the Website is completely working. ","All the forms , Quicklinks ,are linked with firebase which stores data when submitted. ","Website is responsive"],
     },
     {
-        id:9,
+        id:10,
         img:ap,
         title:"ANSHPAY",
         link:"https://eransh1.github.io/AnshPay/",
@@ -89,7 +99,7 @@ const projectData=[
         info:["A practice Website To showcase my fictional AnshPay App","This is a front-end website only which have information regarding my newly launch fictional App that works similar to RazorPay.","The navbar links are working , and i have linked the contact page with a firebase website which store the data when hit on submit button.","This website is responsive."],
     },
     {
-        id:10,
+        id:11,
         img:st,
         title:"SPACE TOURISM",
         link:"https://eransh1.github.io/SpaceTourism/",
