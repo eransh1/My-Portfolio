@@ -69,7 +69,7 @@ const projectData=[
         id:7,
         img:am,
         title:"ANSH MAP",
-        link:"https://anshmap-5epsqbzej-eransh1.vercel.app/",
+        link:"https://anshmap-3xmezgclo-eransh1.vercel.app",
         skills:["HTML","CSS","REACT.JS","JAVASCRIPT","API","GIT"],
         info:["This project is for practice of Goggle Map Api","The origin and destination takes a valid city name. The mode of travel must be selected.","The map gives the route between the origin and destination and the time taken to travel with respect to mode of travel.","On clearing the map, the map is refreshed.","On clicking my location button, map will be repositioned to its original position."],
     },
