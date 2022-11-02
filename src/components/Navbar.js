@@ -45,7 +45,7 @@ const[isScroll,setIsScroll]=useState(false)
       </div>
         
       </ul>
-      <a href="#"><button className='download-cv'>Download CV</button></a>
+      <a href="https://drive.google.com/file/d/19CqeVplzKvdMS_MiffZgi448nkxCfljg/view?usp=share_link"><button className='download-cv'>Download CV</button></a>
     </div>
   </div>
 </nav>
