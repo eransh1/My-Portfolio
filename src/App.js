@@ -7,6 +7,7 @@ import Info from './components/Info'
 import Contact from './components/Contact'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Experiences from './components/Experiences'
 
 const App = () => {
 
@@ -23,6 +24,7 @@ const App = () => {
 <Skills />
 <Projects setProjectInfo={setProjectInfo} />
 {projectInfo?<Info projectInfo={projectInfo} setProjectInfo={setProjectInfo} />:null}
+<Experiences/>
 <Contact />
    </>
   )

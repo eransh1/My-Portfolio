@@ -1,0 +1,54 @@
+#experiences{
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+}
+.experiences_heading{
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    margin-bottom: 4rem;
+    color: white;
+}
+.experince-cont{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.experince-time-spent{
+    padding: .5rem;
+    background-color: #58595c;
+    border-radius: 11px;
+    font-size: 1rem;
+    color: white;
+    margin-right: 2rem;
+}
+.bulb-cont{
+   
+    width: 24px;
+    height: 24px;
+    background-color: #FEC260;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FEC260 0 2px 12px;
+   margin-top: .3rem;
+   margin-right: 1rem;
+}
+.experience-title{
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: white; 
+    font-size: 1.4rem;   
+}
+.experience-company-name{
+    color: #FEC260;
+}
+ol{
+    padding: 0;
+    /* width: 80%; */
+}
+.experince-work-cont{
+    color: #dadada;
+    font-size: 1.1rem;
+}
+.experience-list{
+    margin-bottom: .4rem;
+}

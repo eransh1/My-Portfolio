@@ -40,6 +40,9 @@ const[isScroll,setIsScroll]=useState(false)
           <a className="nav-link" aria-current="page" href="#skills">Skills</a>
         </li>
         <li className="nav-item">
+          <a className="nav-link" aria-current="page" href="#experiences">Experiences</a>
+        </li>
+        <li className="nav-item">
           <a className="nav-link" aria-current="page" href="#contact">Contact</a>
         </li>
       </div>
