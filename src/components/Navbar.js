@@ -1,8 +1,53 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import "../css/Navbar.css"
 import "../augustina font/style.css"
+import { useSelector,useDispatch } from 'react-redux'
+import { setUserDoc } from '../store/userDocSlice'
+import { addDoc, collection, doc, getDocs, query, setDoc, updateDoc } from "firebase/firestore";
+import {db} from "../firebase"
+
 
 const Navbar = () => {
+const dispatch=useDispatch()
+const [userDocData,setUserDocData]=useState(null)
+const userDoc=useSelector((state)=>state.userDoc)
+
+
+console.log(userDoc,"userDoc")
+
+//GET DATA FROM FIREBASE
+
+useEffect(() => {
+  async function fetchUserDocFromFirebase(){
+    const userDataRef = collection(db,"Users");
+    const q = query(userDataRef);
+    const querySnapshot = await getDocs(q);
+   
+    querySnapshot.forEach((doc) => {
+      
+      if(doc.id==="eranshbansal@gmail.com"){
+        setUserDocData({...doc.data(),id:doc.id}) 
+      }
+    
+    }); 
+  }
+fetchUserDocFromFirebase()
+}, [])
+
+//ADDING USERDOC DATA TO STORE
+useEffect(()=>{
+if (userDocData) {
+dispatch(setUserDoc(userDocData))
+}
+},[userDocData])
+
+useEffect(()=>{
+  const updateFirebase=async()=>{ 
+    const userDocumentRef=doc(db,"Users","eranshbansal@gmail.com")
+  await updateDoc(userDocumentRef,{}).then(()=>{console.log("updated")})
+  }
+  // updateFirebase()
+},[])
 
 //Adding Scrooling Event  
 const[isScroll,setIsScroll]=useState(false)
@@ -48,7 +93,7 @@ const[isScroll,setIsScroll]=useState(false)
       </div>
         
       </ul>
-      <a href="https://drive.google.com/file/d/18FByQ7AGlFzSyQSxEsOTEIuMaAPIhBYQ/view?usp=sharing"><button className='download-cv'>Download CV</button></a>
+      <a href={userDoc?.resume} target="_blank"><button className='download-cv'>Download CV</button></a>
     </div>
   </div>
 </nav>
