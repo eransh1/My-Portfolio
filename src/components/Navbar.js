@@ -13,7 +13,7 @@ const [userDocData,setUserDocData]=useState(null)
 const userDoc=useSelector((state)=>state.userDoc)
 
 
-console.log(userDoc,"userDoc")
+// console.log(userDoc,"userDoc")
 
 //GET DATA FROM FIREBASE
 

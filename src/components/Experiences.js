@@ -1,17 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import "../css/Experiences.css"
 
 const Experiences = () => {
 
-    const userDoc=useSelector((state)=>state.userDoc) 
+    const userDocExperience=useSelector((state)=>state.userDoc.experience) 
+    const[experienceArray,setExperienceArray]=useState([])
+
+
+useEffect(()=>{
+    if(userDocExperience){
+        let tempArr=[]
+        userDocExperience.map((data)=>{return tempArr.unshift(data)})
+        // console.log("tempArr",tempArr)
+        setExperienceArray(tempArr)
+ 
+    }
+
+},[userDocExperience])
 
   return (
    <section id='experiences'>
     <h1 className='experiences_heading'>Experiences</h1>
-    {userDoc?.experience?.map((data)=>{
+    {experienceArray?.map((data,idx)=>{
 
-        return <div className='experince-cont'>
+        return <div key={idx} className='experince-cont'>
         <div className='experince-time-spent-cont'>
         <h2 className='experince-time-spent'>{data.from}-{data.to}</h2>
         </div>

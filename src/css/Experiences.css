@@ -49,6 +49,9 @@ ol{
     color: #dadada;
     font-size: 1.1rem;
 }
+.experince-info-cont{
+    width: 80%;
+}
 .experience-list{
     margin-bottom: .4rem;
 }

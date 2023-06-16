@@ -45,12 +45,19 @@ outline: none;
 }
 .send-button{
     width: 80%;
+    height: 50px;
     padding: .3rem;
     margin-top: 1rem;
     font-weight: bold;
     margin-left: 1rem;
     background-color: #FEC260;
     border-radius: 4px;
+    font-size: 1.1rem;
+    border: none;
+}
+.spinner_contact_us{
+    height: 40px;
+    width: 40px;
 }
 
 @media(max-width:767px){
